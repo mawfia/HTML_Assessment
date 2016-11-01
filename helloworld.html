@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World Sample</title>
+  <style>
+table, th, td, tr {
+    width: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    padding: 2px;
+    text-align: left;
+}
+thead{
+  background-color: gray;
+  color: black;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1>Michael Andrew Williams' Page</h1>
+<p>Welcome to my sample page that I plan to use as a template for future websites.</p>
+
+<h2>Quote from a Tale of Two Cities</h2>
+<blockquote>
+  It was the best of times, it was the worst of times, it was the age of wisdom,
+  it was the age of foolishness, it was the epoch of belief,
+  it was the epoch of incredulity, it was the season of Light,
+  it was the season of Darkness, it was the spring of hope,
+  it was the winter of despair, we had everything before us,
+  we had nothing before us, we were all going direct to Heaven,
+  we were all going direct the other way – in short, the period was so far like the present period,
+  that some of its noisiest authorities insisted on its being received, for good or for evil,
+  in the superlative degree of comparison only. <em>- Charles Dickens.</em>
+</blockquote>
+
+<table id="t01">
+  <thead >
+    <tr><th colspan="3" >Literature</th></tr>
+    <tr><th></th><th>Author:</th><th>Book Title:</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4"><b>Classics</b></td>
+      <td>Charles Dickens</td>
+      <td>Hard Times</td>
+    </tr>
+    <tr>
+      <td>Ernest Hemingway</td>
+      <td>The Sun Also Rises</td>
+    </tr>
+    <tr>
+      <td>Ralph Ellison</td>
+      <td>The Invisible Man</td>
+    </tr>
+    <tr>
+      <td>George Orwell</td>
+      <td>1984</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br><br><br>
+<form action="action_page.php" method="post">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="First">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Last"><br>
+    <input type="radio" name="gender" value="male" > Male<br>
+    <input type="radio" name="gender" value="female" checked> Female<br>
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </fieldset>
+</form>
+
+
+<br><br><br><br>
+<h3>Choose your favorite author:</h3>
+<select name="author">
+  <option value="hemingway">Hemingway</option>
+  <option value="dickens">Dickens</option>
+  <option value="huhges">Hughes</option>
+  <option value="orwell">Orwell</option>
+</select>
+
+</body>
+</html>
